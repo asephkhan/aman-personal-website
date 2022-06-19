@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: lightseagreen;
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+
+nav{
+    height: 10vh;
+}
+
+#hero{
+    background-image: url('./images/shrey-kanabar-wha-FXTtyok-unsplash.jpg');
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    height: 90vh;   
+}
+
+.hero-container{
+    padding: 1.5rem;
+}
+
+#hero h4{
+    color: #fff;
+    font-size: 4rem;
+  
+}
+
+.hero-btn{
+    margin-top: 4rem;
+    height: 2.5rem;
+    width: 10rem;
+    background-color: rgb(79, 189, 183);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* about section */
+#about{
+    text-align: center;
+    line-height: 1.5rem;
+}
+.about-container{
+    padding: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    background-color: rgb(79, 189, 183);
+    border-radius: 5px;
+}
+.driver-info {
+    text-align: center;
+    
+}
+.driver-info img{
+    border-radius: 50%;   
+}
+.driver-info p{
+    padding-top: 1.5rem;
+}
+
+/* tours section */
+
+.algarve-description{
+margin: 1.5rem;
+background-color: rgb(79, 189, 183);
+line-height: 1.5rem;
+
+}
+
+#tours{
+    text-align: center;
+}
+.gallery img{
+    height: 250px;
+    width: 95vw;
+    margin:  0.25rem;
+}
+
+.gallery{
+    text-align: center;
+}
+
+/* testimonials section */
+
+#testimonials{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.testimonials-container{
+    margin: 1.5rem;
+    
+
+}
+
+.testimonial-card{
+    background-color: rgb(79, 189, 183);
+    margin-bottom: 1rem;
+}
+
+hr{
+border: 1px solid lightslategray;
+}
