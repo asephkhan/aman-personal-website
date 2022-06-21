@@ -10,25 +10,152 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button{
+  text-transform: uppercase;
+}
+/* Navbar */
+
 nav {
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(79, 189, 183);
+  color: white;
+  padding: 0 2rem;
+  position: fixed;
+  inset: 0 0 auto;
+  align-items: center;
+  z-index: 100;
 }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 2rem;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* burger menu nav */
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 10vh;
+    height: 75vh;
+    background-color: rgb(79, 189, 183);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+nav {
+  padding: 0 2.5rem;
+}
+
+
+/* hero */
 
 #hero {
   background-image: url("./images/shrey-kanabar-wha-FXTtyok-unsplash.jpg");
   background-size: auto 100vh;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
+  text-transform: uppercase;
 }
 
 .hero-container {
+  
   padding: 1.5rem;
 }
 
 #hero h2 {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5rem;
   background-color: transparent;
+  padding-top: 6rem;
 }
 
 .hero-btn {
@@ -140,3 +267,31 @@ hr {
 }
 
 /* footer section  */
+
+footer{
+  background-color: rgb(79, 189, 183);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h1{
+  text-align: center;
+}
+#contact{
+font-size: 1.2rem;
+font-weight: bolder;
+padding: 1.5rem;
+line-height: 2.5rem;
+text-align: center;
+}
+
+footer ul{
+  padding: 1.5rem;
+  text-align: center;
+
+}
+
+li{
+  list-style: none;
+}
