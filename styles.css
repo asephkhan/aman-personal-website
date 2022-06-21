@@ -10,11 +10,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-button{
+
+
+button {
   text-transform: uppercase;
 }
-/* Navbar */
 
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* Navbar */
 nav {
   height: 10vh;
   display: flex;
@@ -67,8 +76,6 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
- 
-
   .nav-links {
     position: absolute;
     right: 0px;
@@ -132,9 +139,8 @@ h1 {
 }
 
 nav {
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
-
 
 /* hero */
 
@@ -147,7 +153,6 @@ nav {
 }
 
 .hero-container {
-  
   padding: 1.5rem;
 }
 
@@ -181,20 +186,18 @@ h1 {
   text-decoration: underline;
   font-size: 2rem;
   padding: 2rem;
- 
 }
 
-h4{
-    font-size: 1.5rem;
+h4 {
+  font-size: 1.5rem;
 }
 
- #about  {
+#about {
   padding-top: 1.5rem;
-} 
+}
 .about-container {
-   
-  padding: 1.5rem ;
-  margin:  1.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
   text-align: center;
   background-color: rgb(79, 189, 183);
   border-radius: 5px;
@@ -212,14 +215,14 @@ h4{
 /* tours section */
 
 .algarve-description {
-    padding: 1.5rem;
+  padding: 1.5rem;
   margin: 1.5rem;
   background-color: rgb(79, 189, 183);
   line-height: 2rem;
 }
 
-.algarve-description h4{
-    padding: 1rem;
+.algarve-description h4 {
+  padding: 1rem;
 }
 
 #tours {
@@ -227,7 +230,7 @@ h4{
   letter-spacing: 0.5px;
 }
 .gallery img {
-  height: 250px;
+  height: 100%;
   width: 95vw;
   margin: 0.25rem;
 }
@@ -245,53 +248,51 @@ h4{
 
 .testimonials-container {
   margin: 1.5rem;
- 
 }
 
 .testimonial-card {
   background-color: rgb(79, 189, 183);
   margin-bottom: 1rem;
-    padding: 1.5rem; 
-    line-height: 1.5rem;
-    letter-spacing: 0.5px;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
 hr {
   border: 1px solid lightslategray;
 }
 
-.testimonial-title{
-    padding-top: 1rem;
-    font-size: 1.3rem;
-    font-weight: bolder;
+.testimonial-title {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 /* footer section  */
 
-footer{
+footer {
   background-color: rgb(79, 189, 183);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-footer h1{
+footer h1 {
   text-align: center;
 }
-#contact{
-font-size: 1.2rem;
-font-weight: bolder;
-padding: 1.5rem;
-line-height: 2.5rem;
-text-align: center;
+#contact {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
-footer ul{
+footer ul {
   padding: 1.5rem;
   text-align: center;
-
 }
 
-li{
+li {
   list-style: none;
 }
