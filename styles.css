@@ -10,24 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-button {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  font-weight: bolder;
-}
-
-button a{
-  text-decoration: none;
-  color: lightseagreen;
-}
-
-
-
 /* Navbar */
 nav {
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
   background-color: lightseagreen;
@@ -44,7 +29,7 @@ nav {
   list-style: none;
 }
 
-.nav-links a{
+.nav-links a {
   color: #fff;
   text-decoration: none;
 }
@@ -53,22 +38,18 @@ nav {
   padding: 1.5rem 2rem;
 }
 
-
-.logo {
-  font-size: 1.5rem;
+.logo p {
+  font-size: 1.5rem ;
 }
 
 h1 {
-  
   font-weight: bold;
-  /* letter-spacing: 1px; */
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
-  
+  text-align: center;
 }
-
 
 /* burger menu nav */
 
@@ -88,7 +69,7 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0px;
-    top: 10vh;
+    top: 7vh;
     height: 75vh;
     background-color: lightseagreen;
     color: #ffff;
@@ -176,11 +157,18 @@ nav {
   margin-top: 4rem;
   height: 2.5rem;
   width: 10rem;
-  background-color: white;
+  background-color: black;
   border-radius: 5px;
   border: none;
-  color: black;
   font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 /* about section */
@@ -189,8 +177,6 @@ nav {
   line-height: 2rem;
   letter-spacing: 0.5px;
 }
-
-
 
 h4 {
   font-size: 1.5rem;
@@ -272,6 +258,52 @@ hr {
   font-weight: bolder;
 }
 
+/* contact section */
+
+#contact {
+  /* 
+  font-weight: bolder; */
+  padding: 1.5rem;
+  /* line-height: 2.5rem; */
+}
+
+/* contact form  */
+.contact-form {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: flex-start;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form input {
+  height: 2rem;
+  background-color: lightseagreen;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input #name {
+  color: white;
+}
+
+textarea {
+  margin-top: 5px;
+  background-color: lightseagreen;
+  border: 2px solid black;
+}
+
+.submit-btn {
+ margin-top: 5px;
+ height: 2rem;
+ border-radius: 5px;
+ border: none;
+ color: #fff;
+ background-color: black;
+}
+
 /* footer section  */
 
 footer {
@@ -279,16 +311,10 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 footer h1 {
-  text-align: center;
-}
-#contact {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding: 1.5rem;
-  line-height: 2.5rem;
   text-align: center;
 }
 
