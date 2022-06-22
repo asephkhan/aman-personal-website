@@ -14,11 +14,13 @@ body {
 
 button {
   text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: bolder;
 }
 
-a{
+button a{
   text-decoration: none;
-  color: #fff;
+  color: lightseagreen;
 }
 
 
@@ -28,7 +30,7 @@ nav {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(79, 189, 183);
+  background-color: lightseagreen;
   color: white;
   padding: 0 2rem;
   position: fixed;
@@ -42,24 +44,31 @@ nav {
   list-style: none;
 }
 
-.nav-links li {
-  padding: 2rem;
+.nav-links a{
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
-  border-bottom: 2px solid white;
+.nav-links li {
+  padding: 1.5rem 2rem;
 }
+
 
 .logo {
   font-size: 1.5rem;
 }
 
 h1 {
-  font-size: 1.5;
+  
   font-weight: lighter;
   letter-spacing: 4px;
   text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  
 }
+
 
 /* burger menu nav */
 
@@ -160,17 +169,17 @@ nav {
   color: #fff;
   font-size: 3.5rem;
   background-color: transparent;
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .hero-btn {
   margin-top: 4rem;
   height: 2.5rem;
   width: 10rem;
-  background-color: rgb(79, 189, 183);
+  background-color: white;
   border-radius: 5px;
   border: none;
-  color: #fff;
+  color: black;
   font-size: 1rem;
 }
 
@@ -181,12 +190,7 @@ nav {
   letter-spacing: 0.5px;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 2rem;
-  padding: 2rem;
-}
+
 
 h4 {
   font-size: 1.5rem;
@@ -271,7 +275,7 @@ hr {
 /* footer section  */
 
 footer {
-  background-color: rgb(79, 189, 183);
+  background-color: lightseagreen;
   display: flex;
   justify-content: center;
   flex-direction: column;
