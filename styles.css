@@ -60,8 +60,8 @@ nav {
 
 h1 {
   
-  font-weight: lighter;
-  letter-spacing: 4px;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -90,7 +90,7 @@ h1 {
     right: 0px;
     top: 10vh;
     height: 75vh;
-    background-color: rgb(79, 189, 183);
+    background-color: lightseagreen;
     color: #ffff;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ nav {
 #hero {
   background-image: url("./images/shrey-kanabar-wha-FXTtyok-unsplash.jpg");
   background-size: auto 100vh;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   height: 100vh;
   text-transform: uppercase;
 }
