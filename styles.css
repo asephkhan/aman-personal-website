@@ -17,7 +17,7 @@ nav {
   justify-content: space-between;
   background-color: lightseagreen;
   color: white;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
   position: fixed;
   inset: 0 0 auto;
   align-items: center;
@@ -44,12 +44,31 @@ nav {
 
 h1 {
   font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
+  text-transform: capitalize;
+  color: black;
   text-decoration: none;
   font-size: 2rem;
   text-align: center;
 }
+
+h3{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  
+}
+
+p{
+  opacity: 0.9;
+}
+
+
 
 /* burger menu nav */
 
@@ -128,16 +147,12 @@ h1 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-nav {
-  padding: 0 1.5rem;
-}
 
 /* hero */
 
 #hero {
   background-image: url("./images/shrey-kanabar-wha-FXTtyok-unsplash.jpg");
   background-size: auto 100vh;
-  /* background-repeat: no-repeat; */
   height: 100vh;
   text-transform: uppercase;
 }
@@ -157,7 +172,7 @@ nav {
   margin-top: 4rem;
   height: 2.5rem;
   width: 10rem;
-  background-color: black;
+  background-color: white;
   border-radius: 5px;
   border: none;
   font-size: 1rem;
@@ -168,47 +183,47 @@ nav {
 
 button a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* about section */
 #about {
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 0.5px;
+   text-align: center; 
+  line-height: 1.7rem;
+  letter-spacing: 0.4px;
 }
 
-h4 {
-  font-size: 1.5rem;
-}
+
 
 #about {
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 .about-container {
-  padding: 1.5rem;
-  margin: 1.5rem;
-  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
   background-color: rgb(79, 189, 183);
   border-radius: 5px;
 }
 .driver-info {
-  text-align: center;
+  
 }
 .driver-info img {
   border-radius: 50%;
 }
 .driver-info p {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
+  opacity: 0.9;   
 }
 
 /* tours section */
 
-.algarve-description {
-  padding: 1.5rem;
-  margin: 1.5rem;
+.tour-description {
+  padding: 1rem;
+  margin: 1rem;
   background-color: rgb(79, 189, 183);
-  line-height: 2rem;
+  line-height: 1.7rem;
+  
+  text-align: center;
 }
 
 .algarve-description h4 {
@@ -217,7 +232,8 @@ h4 {
 
 #tours {
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  padding-top: 3rem;
 }
 .gallery img {
   height: 100%;
@@ -229,11 +245,64 @@ h4 {
   text-align: center;
 }
 
+.more-tours-btn{
+  height: 2.5rem;
+  width: 15rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bolder;
+
+}
+
+/* more tours page */
+
+.tour-page-btns{
+  margin-top: 2.5rem; 
+  position: fixed;
+  display: flex;
+  z-index: 1;
+}
+
+.tour-page-btns button{
+  background-color: white;
+  height: 3rem;
+  width:25vw;
+  border: none;
+ 
+}
+
+.tour-page-btns button a{
+  color: black;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+#city-tours{
+  padding-top: 6rem;
+}
+
+#golf-tours{
+  padding-top: 5.5rem;
+}
+
+#wine-tours{
+  padding-top: 5.5rem;
+}
+
+#surf-tours{
+  padding-top: 5.5rem;
+}
+
+
 /* testimonials section */
 
 #testimonials {
   text-align: center;
   line-height: 1.5rem;
+  padding-top: 3rem;
 }
 
 .testimonials-container {
@@ -261,10 +330,9 @@ hr {
 /* contact section */
 
 #contact {
-  /* 
-  font-weight: bolder; */
-  padding: 1.5rem;
-  /* line-height: 2.5rem; */
+  padding: 1rem;
+  padding-top: 3rem;
+  
 }
 
 /* contact form  */
@@ -272,26 +340,28 @@ hr {
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1rem;
   justify-content: flex-start;
   line-height: 2rem;
   margin-top: 1.5rem;
+  background-color: rgb(79, 189, 183);
+  color: black;
 }
 
 .contact-form input {
   height: 2rem;
-  background-color: lightseagreen;
+  background-color: rgb(79, 189, 183);
   border: none;
   border-bottom: 2px solid black;
 }
 
 input #name {
-  color: white;
+  color: black;
 }
 
 textarea {
   margin-top: 5px;
-  background-color: lightseagreen;
+  background-color: rgb(79, 189, 183);
   border: 2px solid black;
 }
 
@@ -300,18 +370,23 @@ textarea {
  height: 2rem;
  border-radius: 5px;
  border: none;
- color: #fff;
- background-color: black;
+ color: black;
+ background-color: white;
+ font-size: 1.2rem;
+ font-weight: bold;
+
 }
 
 /* footer section  */
 
-footer {
+footer{
+
   background-color: lightseagreen;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 2rem;
 }
 
 footer h1 {
@@ -319,7 +394,7 @@ footer h1 {
 }
 
 footer ul {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
