@@ -133,23 +133,23 @@
 
     <section id="contact">
         <h1>Contact Me</h1>
-        <form action="https://formsubmit.co/asephkhan1998@gmail.com" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/asephkhan1998@gmail.com" method="POST">
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="text" required>
+            <input type="text" name="name" required>
             <label for="phone">Phone</label>
-            <input type="number" id="phone" name="number" required>
+            <input type="number" name="phone" required>
             <label for="email">Email (optional)</label>
-            <input type="email" id="email" name="email">
+            <input type="email" name="email">
             <label for="message">Message</label>
-            <textarea type="text" id="message" name="text" placeholder="please type your message here!" cols="30"
-                rows="10"></textarea>
+            <textarea  name="message" placeholder="please type your message here!" cols="30"
+                rows="10" required></textarea>
 
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://amanraza.netlify.app/thanks.html" />
+            <!-- <input type="hidden" name="_next" value="https://amanraza.netlify.app/thanks.html" /> -->
             <input type="hidden" name="_subject" value="New email woooo!" />
 
-            <button class="submit-btn" type="button">SUBMIT</button>
+            <button class="submit-btn" type="submit">SUBMIT</button>
 
         </form>
     </section>
