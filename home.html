@@ -22,7 +22,7 @@
             <li><a href="#tours">tours</a></li>
             <li><a href="#testimonials">testimonials</a></li>
             <li><a href="#contact">contact</a></li>
-            <li>+351-920016966</li>
+            <li>+351920016966</li>
         </ul>
         <!--     burger menu -->
         <div class="burger">
@@ -34,10 +34,25 @@
     <!-- hero section -->
     <section id="hero">
         <div class="hero-container">
-            <h2>explore the hidden gems of algarve with me</h2>
+            <h2>explore the hidden gems of <span style="color: red ;">por</span><span style="color: green;">utgal</span>
+                with me</h2>
             <button class="hero-btn"> <a href="#tours"> tours </a></button>
             <button class="hero-btn"> <a href="#contact"> contact </a></button>
         </div>
+
+
+        <div id="cookies">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="cookies">
+                        <p>This website uses cookies to ensure you get the best experience on our website. <a href=""> More info.</a></p>
+                        <button id="cookies-btn">That's fine!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
     <!-- about section -->
     <section id="about">
@@ -53,7 +68,7 @@
                     how long the journey would be. Worked for Five Star Hotels in Algarve such as, Pestana Blue Alvor ,
                     Dom João II, Vitors Village and many more as Driver and Tour guide. Knows Algarve region's beauty
                     and remarkable landscapes. Exceptional in providing customer service and having great time
-                    management skills.</p>   
+                    management skills.</p>
             </div>
         </div>
     </section>
@@ -82,7 +97,7 @@
                 <img src="./images/algarve8.jpeg" alt="algarve-pic">
                 <img src="./images/algarve9.jpeg" alt="algarve-pic">
                 <img src="./images/algarve10.jpeg" alt="algarve-pic">
-                <img src="./images/algarve11.jpeg" alt="algarve-pic"> 
+                <img src="./images/algarve11.jpeg" alt="algarve-pic">
                 <img src="./images/algarve12.jpeg" alt="algarve-pic">
                 <img src="./images/algarve13.jpeg" alt="algarve-pic">
             </div>
@@ -118,28 +133,31 @@
 
     <section id="contact">
         <h1>Contact Me</h1>
-        <form action="submit" class="contact-form">
+        <form action="https://formsubmit.co/asephkhan1998@gmail.com" method="POST" class="contact-form">
+
             <label for="name">Name</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" name="text" required>
             <label for="phone">Phone</label>
-            <input type="number" id="phone" required>
+            <input type="number" id="phone" name="number" required>
             <label for="email">Email (optional)</label>
-            <input type="email" id="email">
+            <input type="email" id="email" name="email">
             <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="please type your message here!" cols="30"
+            <textarea type="text" id="message" name="text" placeholder="please type your message here!" cols="30"
                 rows="10"></textarea>
+
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://amanraza.netlify.app/thanks.html" />
+            <input type="hidden" name="_subject" value="New email woooo!" />
+
             <button class="submit-btn" type="button">SUBMIT</button>
 
         </form>
-
-
-
     </section>
     <!-- footer section -->
     <footer>
         <div class="my-details">
             <p>Email : amanraza990@gmail.com</p>
-            <p>Phone : +351-920016966</p>
+            <p>Phone : +351920016966</p>
         </div>
 
         <ul>
@@ -148,6 +166,7 @@
         </ul>
     </footer>
     <script src="burger.js"></script>
+    <script src="cookies.js"></script>
 </body>
 
 </html>
